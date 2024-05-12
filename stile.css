@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,700');
+
+/* 
+Orange: #F15B31   Light Blue: #98D2BF  Dark Blue: #0D2C40
+*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(165, 255, 255);
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#personalMessage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#showMessageButton {
+    background-color: #0a0e51;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+.container {
+    text-align: center;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#message {
+    display: none;
+    margin-top: 20px;
+}
+
+ .message-text {
+            margin-bottom: 20px;
+        }
+
+        .message-button {
+            background-color: #FF4D00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .message-button:hover {
+            background-color: #FF7F50;
+        }
+        .container ul {
+            list-style-type: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Elimina el espacio interno de la lista */
+            text-align: center; /* Centra el texto de la lista */
+        }
+
+        .heart {
+            width: 100px;
+            height: 90px;
+            position: relative;
+            animation: heartbeat 1s infinite linear;
+            transform-origin: center;
+            justify-content: center;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: "";
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            background: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+            top: 0;
+        }
+
+        .heart:after {
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+            right: 0;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+
+@media (max-width: 650px) {
+    .slide {
+        flex: 0 0 100%;
+    }
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+}
+
+}
