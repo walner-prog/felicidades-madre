@@ -12,16 +12,29 @@
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background-color: rgb(165, 255, 255); /* Color de fondo */
+    color: white;
+    background: #FFE000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #799F0C, #FFE000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #799F0C, #FFE000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
-/* Estilos de imágenes dentro del contenedor */
-.container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+/* Estilos del slider de imágenes */
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
 }
 
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
 /* Estilos de listas dentro del contenedor */
 .container ul {
     text-align: left;
